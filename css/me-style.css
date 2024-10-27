@@ -1,0 +1,18 @@
+.button1
+{  
+    background-color: #4CAF50; /* رنگ پس‌زمینه */  
+    border: none; /* بدون حاشیه */  
+    color: white; /* رنگ متن */  
+    padding: 15px 32px; /* فضای داخلی */  
+    text-align: center; /* تراز متن */  
+    text-decoration: none; /* حذف زیرخط */  
+    display: inline-block; /* نمایش به صورت بلوک */  
+    font-size: 16px; /* اندازه فونت */  
+    margin: 4px 2px; /* حاشیه */  
+    cursor: pointer; /* نشان‌گر ماوس */  
+    border-radius: 8px; /* لبه‌های گرد */  
+    transition: background-color 0.3s; /* انیمیشن تغییر رنگ */  
+}  
+.button1:hover {  
+    background-color: #45a049; /* رنگ جدید در حالت hover */  
+}  
