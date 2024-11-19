@@ -268,7 +268,7 @@ i, .table table i:before {
 	height:40px !important;
 	border-radius:4px;
 	background:none !important;
-	background-color:#66931d !important;
+	background-color:red !important;
 	opacity:.6
 }
 .tp-leftarrow.default:before {

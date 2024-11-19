@@ -1160,8 +1160,41 @@ zoom: 1;
 	list-style:none;
 	position:absolute;
 	visibility:hidden;
+	
+	border-radius: 20px;
+    background: 
+        linear-gradient(135deg, rgba(230, 57, 70, 0.8), rgba(69, 123, 157, 0.8)),
+        url('../images/back2.webp') center/cover no-repeat;
+    background-size: 150% 150%, cover; /* گرادیانت نرم‌تر */
+    animation: gradientAnimation 8s ease infinite alternate, 
+               imageAnimation 12s ease infinite alternate;
+	
+	
+	
+	
 }
-
+@keyframes gradientAnimation {
+		0% {
+			background-position: 0% 50%;
+		}
+		50% {
+			background-position: 100% 50%;
+		}
+		100% {
+			background-position: 0% 50%;
+		}
+	}
+	@keyframes imageAnimation {
+		0% {
+			background-position: center top;
+		}
+		50% {
+			background-position: center center;
+		}
+		100% {
+			background-position: center bottom;
+		}
+	}
 /*  CAPTION SLIDELINK   **/
 .caption.slidelink a div,
 .tp-caption.slidelink a div {	width:3000px; height:1500px;  background:url(../assets/coloredbg.png) repeat;}
