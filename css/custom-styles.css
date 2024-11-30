@@ -82,7 +82,7 @@ a:hover, a:focus {
 	background-color:#FFFFFF
 }
 .header_bag span, .fLeft:hover,  .fRight:hover, #toTop, .nicescroll-rails div,  .pagination-tt ul li a:hover,  .big-slider .flex-direction-nav a, .big-slider .flex-direction-nav a:hover,  .table table th, .table table tfoot td,  #wp-calendar caption, #wp-calendar tr #today,  #mobilepro {
-	background-color:#a0d053 !important
+	background: linear-gradient(45deg, #deeb34, #fad0c4, #fbc2eb, rgb(40, 202, 53));
 }
 .sliderv2{
 width: 100%;
@@ -258,6 +258,18 @@ i, .table table i:before {
 .shop a span.onsale, .shop span.onsale {
 	background:#727272 !important;
 }
+
+@keyframes purple-gradient {
+    0% {
+        background: linear-gradient(45deg, #9b59b6, #8e44ad);
+    }
+    50% {
+        background: linear-gradient(45deg, #6a1b9a, #c39bd3);
+    }
+    100% {
+        background: linear-gradient(45deg, #9b59b6, #8e44ad);
+    }
+}
 .tparrows {
 	text-align:center;
 	font-family:FontAwesome;
@@ -268,8 +280,35 @@ i, .table table i:before {
 	height:40px !important;
 	border-radius:4px;
 	background:none !important;
-	background-color:red !important;
+	animation: purple-gradient 10s ease infinite; 
 	opacity:.6
+}
+
+.responsive-img {
+    width: 100%;
+    height: auto; /* تنظیم ارتفاع به صورت خودکار */
+	opacity: 0.8;
+	border-radius: 28%;
+}
+
+/* تنظیمات خاص برای دسکتاپ */
+@media (min-width: 768px) {
+    .responsive-img {
+        width: 50%; /* در صفحه‌های بزرگتر (دسکتاپ)، عرض تصویر 50% */
+    }
+}
+
+/* تنظیمات خاص برای موبایل */
+@media (max-width: 767px) {
+    .responsive-img {
+        width: 100%; /* در صفحه‌های کوچکتر (موبایل)، عرض تصویر 100% */
+    }
+}
+.element {
+    width: 100%;
+    height: 100vh;
+    animation: purple-gradient 10s ease infinite; /* انیمیشن تغییر رنگ به صورت مداوم */
+    background-size: 400% 400%;
 }
 .tp-leftarrow.default:before {
 	content: "\f104";
@@ -280,6 +319,40 @@ i, .table table i:before {
 .tp-rightarrow:hover, .tp-leftarrow:hover {
 	opacity:1
 }
+.language-switcher button {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	margin-left: 10px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	
+  }
+  
+.language-switcher {
+    margin-top: 5px;
+ } 
+  .language-switcher button:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+
+  }
+  @media (max-width: 768px) {
+	.language-switcher button {
+		background-color: rgba(0, 0, 0, 0.5);
+		color: #fff;
+		border: none;
+		padding: 10px 15px;
+		margin-left: 5px;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+		
+	  }
+	  .language-switcher {
+		margin-top: 0px;
+	 }
+  }
+
 .tp-bullets {
 	background:none !important;
 }
