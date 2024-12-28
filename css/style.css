@@ -1284,7 +1284,6 @@ ul.sub-menu:after {border-left:6px solid transparent;
 	padding:50px 0;
 	background:#fff;
 	
-		border-radius: 20px;
 		background: linear-gradient(135deg, #B48A78, #E5C1A1, #bac8e0, #efcc85);
 
 
@@ -2349,7 +2348,7 @@ ul.newsticker span {
 .coupon_button {
 	float:right;
 }
-.widget #searchwidget input:focus, #newsletters input:focus, .coupon_input:focus,.footer_widget #searchwidget input:focus, {
+.widget #searchwidget input:focus, #newsletters input:focus, .coupon_input:focus,.footer_widget #searchwidget input:focus {
 	background:#fff;
 	border:1px solid #C5C5C5;
 	box-shadow:0 0 5px rgba(0, 0, 0, 0.1);
@@ -2357,7 +2356,7 @@ ul.newsticker span {
 .widget #searchwidget:hover button, .footer_widget #searchwidget:hover button,#newsletters:hover button {
 	color:#191919;
 }
-.widget #searchwidget button, #newsletters button,.footer_widget #searchwidget button, {
+.widget #searchwidget button, #newsletters button,.footer_widget #searchwidget button {
 	position:absolute;
 	top:6px;
 	right:14px;
@@ -4675,7 +4674,8 @@ a.notification-close {
 	padding:20px 0;
 	display:block;
 	color:#BFBFBF;
-	background:#fff;
+	background-color: azure;
+
 	height:100%;
 }
 .detailes h5 {

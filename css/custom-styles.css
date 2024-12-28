@@ -38,6 +38,7 @@ h4 {
 	font-size: 18px;
 	font-weight: bold;
 	color: #000000;
+	line-height: 35px;
 }
 h5 {
 	font-family: Raleway, Arial, Helvetica, sans-serif;
@@ -59,7 +60,7 @@ a {
 	color: #000000;
 }
 a:hover, a:focus {
-	color: #a0d053;
+	color: #bf71d1;
 }
 .sf-menu a {
 	font-size: 23px;
@@ -193,6 +194,9 @@ i, .table table i:before {
 }
 #footer {
 	color:#000000;
+	font-family: Raleway, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 33px;
 }
 #footer a {
 	color:#000000
@@ -319,7 +323,7 @@ i, .table table i:before {
 .tp-rightarrow:hover, .tp-leftarrow:hover {
 	opacity:1
 }
-.language-switcher button {
+.language-switcher  a {
 	background-color: rgba(0, 0, 0, 0.5);
 	color: #fff;
 	border: none;
@@ -327,11 +331,13 @@ i, .table table i:before {
 	margin-left: 10px;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
-	
+	text-align: center;
   }
   
 .language-switcher {
-    margin-top: 5px;
+  
+	margin-top: 7px;
+	line-height: 35px;
  } 
   .language-switcher button:hover {
 	background-color: rgba(0, 0, 0, 0.8);
@@ -765,3 +771,10 @@ i, .table table i:before {
 .me.button-custom{
 	
 }
+.descrition{
+    font-size: 21px !important;
+    font-family: 'Times New Roman', Times, serif !important;
+	line-height: 28px;
+	color: #000;
+}
+
