@@ -63,6 +63,7 @@ if(hiddenInput !=null)
         const detailesItem = document.getElementsByClassName('detailes');
         const btnBack= document.getElementById('btn-back');
         const title2= document.getElementById('title2');
+        const titleSite= document.getElementsByTagName('title');
 
         // گرفتن تگ h1
       
@@ -80,6 +81,7 @@ if(hiddenInput !=null)
            
 btnBack.innerText = "بازگشت";
 title2.innerText = "محصولات ما";
+titleSite.textContent = "فرش حاج خلیلی";
 
         }  
          
@@ -96,6 +98,7 @@ title2.innerText = "محصولات ما";
     
 btnBack.innerText = "Back";
 title2.innerText = "Our Products";
+titleSite.textContent = "Haj Khalili Carpet";
         }
        
         else if("AB" ===  localStorage.getItem('Language')){
@@ -109,6 +112,7 @@ title2.innerText = "Our Products";
           
             btnBack.innerText = "العودة إلى الصفحة السابقة";
             title2.innerText = "منتجاتنا";
+            titleSite[0].innerText = "سجاد حاج خلیلی";
                 }
 
 });
