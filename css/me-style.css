@@ -190,5 +190,25 @@ button:hover {
   
 
   }
+  @media (max-width: 768px) { /* عرض کمتر از 768px (گوشی) */
+   
+
+      .styled-text {
+    transform: rotate(45deg);
+    transform-origin: 50% 50%;
+    font-size: 10px !important; /* کوچک کردن متن */
+    
+    margin: -20px !important; /* حرکت به سمت بالا */
+    text-align: left; /* تراز به چپ */
+}
+  }
+  .styled-text {
+    transform: rotate(45deg);
+    transform-origin: 50% 50%;
+    font-size: 30px ; /* کوچک کردن متن */   
+    margin: -15px !important; /* حرکت به سمت بالا */
+
+}
+
 
 
