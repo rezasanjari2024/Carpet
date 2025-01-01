@@ -40,3 +40,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
 
 });
+function Redirection() {
+  
+      let langues= localStorage.getItem('Language')
+
+  if(langues !=null){
+     if ("AB" ===  langues) {
+            window.location.href = "index-AB.html";
+        } else if ("EN" ===  langues) {
+            window.location.href = "index-EN.html";
+        } else {
+            window.location.href = "index.html";
+        }
+  }else{ window.location.href = "index.html";}
+       
+   
+}

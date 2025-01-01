@@ -52,8 +52,10 @@ const hiddenInput = document.getElementById('Language');
 
 if(hiddenInput !=null)
   localStorage.setItem('Language', hiddenInput.value);
-
-
+if(hiddenInput && hiddenInput.value != localStorage.getItem('Language')){
+   Redirection() 
+}
+;
     console.log("برنامه لود شد!");
   const url = window.location.href; // آدرس کامل
         const fileName = url.substring(url.lastIndexOf("/") + 1); // استخراج نام فایل
@@ -116,3 +118,19 @@ titleSite.textContent = "Haj Khalili Carpet";
                 }
 
 });
+function Redirection() {
+  
+    let langues= localStorage.getItem('Language')
+
+if(langues ){
+   if ("AB" ===  langues) {
+          window.location.href = "index-AB.html";
+      } else if ("EN" ===  langues) {
+          window.location.href = "index-EN.html";
+      } else {
+          window.location.href = "index.html";
+      }
+}else{ window.location.href = "index.html";}
+     
+ 
+}
