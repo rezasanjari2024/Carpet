@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-    console.log("برنامه لود شد!");
+   
     const titleSite= document.getElementsByTagName('title')[0];
     const mainTitle= document.getElementById('main-title');
     const mainContent= document.getElementById('main-content');
@@ -40,9 +40,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
 
 });
-function Redirection() {
-  
+function Redirection(Language) {
+  debugger
+    localStorage.setItem('Language', langues);
       let langues= localStorage.getItem('Language')
+
 
   if(langues !=null){
      if ("AB" ===  langues) {
@@ -56,3 +58,13 @@ function Redirection() {
        
    
 }
+var redirectAB = document.getElementById('AB');
+redirectAB.addEventListener('click', () => Redirection('AB'));
+
+var redirectEN = document.getElementById('EN');
+redirectEN.addEventListener('click', () => Redirection('EN'));
+
+var redirectFA = document.getElementById('FA');
+redirectFA.addEventListener('click', () => Redirection('FA'));
+
+

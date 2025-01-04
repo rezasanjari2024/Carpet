@@ -50,16 +50,16 @@ document.addEventListener("DOMContentLoaded", function() {
     // ذخیره مقدار در LocalStorage
 const hiddenInput = document.getElementById('Language');
 
-if(hiddenInput !=null)
+if(hiddenInput !=null && localStorage.getItem('Language') ==null)
   localStorage.setItem('Language', hiddenInput.value);
 if(hiddenInput && hiddenInput.value != localStorage.getItem('Language')){
-   Redirection() 
+   Redirection(localStorage.getItem('Language')) 
 }
 ;
-    console.log("برنامه لود شد!");
-  const url = window.location.href; // آدرس کامل
-        const fileName = url.substring(url.lastIndexOf("/") + 1); // استخراج نام فایل
-        console.log("نام فایل HTML جاری:", fileName);
+   
+  const url = window.location.href; 
+        
+
         const titleElement = document.getElementById("address-title");
         const mapElement = document.getElementById("address-map");
         const detailesItem = document.getElementsByClassName('detailes');
@@ -67,10 +67,6 @@ if(hiddenInput && hiddenInput.value != localStorage.getItem('Language')){
         const title2= document.getElementById('title2');
         const titleSite= document.getElementsByTagName('title');
 
-        // گرفتن تگ h1
-      
-        
-        // اضافه کردن متن بعد از تگ h1
         
         if("FA" ===  localStorage.getItem('Language')) {
             titleElement.textContent = "برای خرید و سفارس فرش مورد علاقه خودتان با ما در تماس باشید";
@@ -118,19 +114,29 @@ titleSite.textContent = "Haj Khalili Carpet";
                 }
 
 });
-function Redirection() {
+function Redirection(langue) {
+    debugger
+      localStorage.setItem('Language', langue);
+        let langues= localStorage.getItem('Language')
   
-    let langues= localStorage.getItem('Language')
-
-if(langues ){
-   if ("AB" ===  langues) {
-          window.location.href = "index-AB.html";
-      } else if ("EN" ===  langues) {
-          window.location.href = "index-EN.html";
-      } else {
-          window.location.href = "index.html";
-      }
-}else{ window.location.href = "index.html";}
+  
+    if(langues !=null){
+       if ("AB" ===  langues) {
+              window.location.href = "index-AB.html";
+          } else if ("EN" ===  langues) {
+              window.location.href = "index-EN.html";
+          } else {
+              window.location.href = "index.html";
+          }
+    }else{ window.location.href = "index.html";}
+         
      
- 
-}
+  }
+  var redirectAB = document.getElementById('AB');
+  redirectAB && redirectAB.addEventListener('click', () => Redirection('AB'));
+  
+  var redirectEN = document.getElementById('EN');
+  redirectEN && redirectEN.addEventListener('click', () => Redirection('EN'));
+  
+  var redirectFA = document.getElementById('FA');
+ redirectFA && redirectFA.addEventListener('click', () => Redirection('FA'));
