@@ -209,6 +209,37 @@ button:hover {
     margin: -15px !important; /* حرکت به سمت بالا */
 
 }
+/* Video section */
+.about-video {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#play-video-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #3f9637;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#play-video-btn:hover {
+    background-color: #126318;
+}
+
+#video-container {
+    margin-top: 20px;
+}
+
+#about-video {
+    max-width: 100%;
+	max-height: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
 
 
 
