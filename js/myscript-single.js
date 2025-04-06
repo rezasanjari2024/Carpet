@@ -50,7 +50,7 @@ function Redirection(Language) {
      if ("AB" ===  langues) {
             window.location.href = "index-AB.html";
         } else if ("EN" ===  langues) {
-            window.location.href = "index-EN.html";
+            window.location.href = "index-en.html";
         } else {
             window.location.href = "index.html";
         }
